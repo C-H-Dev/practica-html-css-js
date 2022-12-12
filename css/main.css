@@ -1,0 +1,110 @@
+/*General*/
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+
+/*Principal*/
+.principal {
+    display: flex;
+    justify-content:center;
+    width: 60%;
+    height: 70%;
+}
+
+
+/*Marca*/
+.marca {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 3rem;
+    width: 20%;
+    font-family: 'Lexend Deca', sans-serif;
+    color: #e4f4f4;
+    margin: 0;
+    cursor: pointer;
+}
+
+.marca.activa{
+    width: 38%;
+}
+
+.marca:first-child {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.marca:last-child {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+/*Color por marca*/
+.sedans {
+    background-color: #e28525;
+}
+
+.suvs {
+    background-color: #016972;
+}
+
+.luxury {
+    background-color: #00403f;
+}
+
+/*Headers*/
+.titulo {
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    ;
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
+}
+
+/*Logo marca*/
+.marca__logo {
+    width: 6rem;
+}
+
+/*Descripcion marca*/
+.marca__descripcion {
+    padding: 0;
+    margin: 0;
+}
+
+/*Boton marca*/
+.marca__btn {
+    text-align: center;
+    width: 65%;
+    text-decoration: none;
+    background-color: #f2f2f2;
+    padding: 1.5rem 0.2rem;
+    border-radius: 2rem;
+}
+
+.sedans .marca__btn {
+    color: #e28525;
+}
+
+.suvs .marca__btn {
+    color: #016972;
+}
+
+.luxury .marca__btn {
+    color: #00403f;
+}
